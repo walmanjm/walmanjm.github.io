@@ -4,25 +4,6 @@
 
 body {margin:0}
 
-.icon-bar {
-  width: 100px;
-  background-color: lightgray;
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  transition: all 0.3s ease;
-  color: rgb(239, 243, 24);
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: rgb(245, 0, 0);
-;
-}
-
-.active {
-  background-color: rgb(43, 245, 53);
+h1 {
+  color: yellow;
 }
