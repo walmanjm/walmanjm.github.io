@@ -1,5 +1,5 @@
-## icon bar using fontawesome
+## belllooo
 
-fontawesome: `<script src="https://kit.fontawesome.com/c08e1bd072.js" crossorigin="anonymous"></script>`
+
 
 
