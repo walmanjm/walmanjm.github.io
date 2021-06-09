@@ -2,12 +2,16 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  background-color: black;
+body{
+  background-image: url(https://source.unsplash.com/random/640x360);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   text-align: center;
+  font-size: 42px;
 }
-
 h1 {
+  text-shadow: 4px 4px 4px red;
   color: yellow;
 }
