@@ -11,6 +11,10 @@ body {
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
+  background-image: url(https://source.unsplash.com/0ZWu96-_4Sk);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:aqua;
 }
 header,
 footer,
@@ -18,7 +22,7 @@ article,
 nav,
 div {
   padding: 1.2em;
-  background: cyan;
+  background: rgba(47, 0, 255, 0.24);
 }
 #pageHeader {
   grid-area: header;
