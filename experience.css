@@ -1,0 +1,44 @@
+:root {
+  --bgcolor: #2a2c33;
+  --bodycolor: #bfbfc1;
+  --acolor: #949599;
+  --hovercolor: #e9e9ea;
+}
+* {
+  box-sizing: border-box;
+  margin: 0.5em;
+}
+body {
+  background-color: var(--bgcolor);
+  color: var(--bodycolor);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  display: grid;
+  text-align: end;
+  font-size: 1.3em;
+}
+a {
+  text-decoration: none;
+  color: var(--acolor);
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--hovercolor);
+}
+.experience {
+  display: grid;
+  grid-template-columns: 20% auto;
+  border: 1px solid var(--acolor);
+}
+.detail {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+.detail ul li {
+  list-style: none;
+}
+p {
+  color: var(--acolor);
+}
