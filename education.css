@@ -6,7 +6,7 @@
 }
 * {
   box-sizing: border-box;
-  margin: 0.5em;
+  margin: 0.5rem;
 }
 body {
   background-color: var(--bgcolor);
@@ -16,7 +16,7 @@ body {
 nav {
   display: grid;
   text-align: end;
-  font-size: 1.3em;
+  font-size: 1.2rem;
 }
 .topnav a {
   text-decoration: none;
@@ -31,6 +31,7 @@ nav {
   display: grid;
   grid-template-columns: 20% auto;
   border: 1px solid var(--acolor);
+  font-size: 0.9rem;
 }
 .detail {
   display: grid;
@@ -42,15 +43,16 @@ nav {
 .col p {
   color: var(--acolor);
 }
-@media all and (max-width: 575px) {
+@media (min-width: 481px) and (max-width: 767px) {
   nav {
     display: grid;
-    grid-template-columns: 1%;
+    grid-template-columns: 100%;
     text-align: center;
+    font-size: 0.9rem;
   }
   .education {
     display: grid;
     grid-template-columns: auto auto;
-    font-size: 0.7em;
+    font-size: 0.8rem;
   }
 }
