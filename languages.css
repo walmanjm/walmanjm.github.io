@@ -6,7 +6,7 @@
 }
 * {
   box-sizing: border-box;
-  margin: 0.5em;
+  margin: 0.5rem;
 }
 body {
   background-color: var(--bgcolor);
@@ -16,7 +16,7 @@ body {
 nav {
   display: grid;
   text-align: end;
-  font-size: 1.3em;
+  font-size: 1.2rem;
 }
 .topnav a {
   text-decoration: none;
@@ -34,23 +34,22 @@ nav {
 }
 .col ul li {
   list-style: none;
-  line-height: 2.5em;
+  line-height: 2rem;
+  font-size: 1rem;
 }
 #row {
   color: var(--acolor);
 }
-#row1 {
-  font-size: 1.1em;
-}
-@media all and (max-width: 575px) {
+@media (min-width: 481px) and (max-width: 767px) {
   nav {
     display: grid;
-    grid-template-columns: 1%;
+    grid-template-columns: 100%;
     text-align: center;
+    font-size: 0.9rem;
   }
   .languages {
     display: grid;
     grid-template-columns: auto auto auto;
-    font-size: 0.7em;
+    font-size: 1rem;
   }
 }
