@@ -17,10 +17,10 @@ body {
   grid-template-columns: 20% auto auto;
   grid-template-areas:
     "home about"
-    "home education"
-    "home languages"
-    "home skill"
-    "home experience";
+    ". education"
+    ". languages"
+    ". skill"
+    ". experience";
   margin: 0.5rem;
 }
 .sec-home {
@@ -55,15 +55,16 @@ body {
   line-height: 2rem;
   font-size: 0.9rem;
 }
-.experience {
-  padding: 0.5rem;
-  line-height: 1.2rem;
-}
 .languages {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   border: 1px solid var(--acolor);
   line-height: 2rem;
+  font-size: 0.9rem;
+}
+.experience {
+  padding: 0.5rem;
+  line-height: 1.2rem;
 }
 .col ul li {
   list-style: none;
@@ -84,7 +85,7 @@ a:hover {
   color: var(--hovercolor);
 }
 p {
-  line-height: 0.2rem;
+  line-height: 0.3rem;
 }
 .upper {
   text-transform: uppercase;
