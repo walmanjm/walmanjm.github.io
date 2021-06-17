@@ -1,0 +1,72 @@
+:root {
+  --bgcolor: #2a2c33;
+  --bodycolor: #bfbfc1;
+  --acolor: #949599;
+  --hovercolor: #e9e9ea;
+}
+* {
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+body {
+  background-color: var(--bgcolor);
+  color: var(--bodycolor);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.sec-home {
+  grid-column: 1;
+  position: fixed;
+}
+.home ul li {
+  font-size: 1.2rem;
+}
+.sec-about,
+.sec-education,
+.sec-languages,
+.sec-skill,
+.sec-experience {
+  grid-column: 2;
+}
+.aboutme,
+.skill {
+  display: grid;
+  grid-template-columns: 30% auto;
+  border: 1px solid var(--acolor);
+}
+.education,
+.experience {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid var(--acolor);
+}
+.languages {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  border: 1px solid var(--acolor);
+}
+.detail {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.col ul li {
+  list-style: none;
+}
+.col ul li i {
+  font-size: 1.5rem;
+}
+.col ul li i:hover {
+  color: var(--hovercolor);
+}
+a {
+  text-decoration: none;
+  color: var(--acolor);
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--hovercolor);
+}
