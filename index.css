@@ -6,7 +6,6 @@
 }
 * {
   box-sizing: border-box;
-  margin: 0.5rem;
 }
 body {
   background-color: var(--bgcolor);
@@ -15,42 +14,56 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 20% auto auto;
+  grid-template-areas:
+    "home about"
+    "home education"
+    "home languages"
+    "home skill"
+    "home experience";
+  margin: 0.5rem;
 }
 .sec-home {
-  grid-column: 1;
-  position: fixed;
+  grid-area: home;
 }
-.home ul li {
+.sec-about {
+  grid-area: about;
+}
+.sec-education {
+  grid-area: education;
+}
+.sec-languages {
+  grid-area: languages;
+}
+.sec-skill {
+  grid-area: skill;
+}
+.sec-experience {
+  grid-area: experience;
+}
+.home {
+  line-height: 2rem;
   font-size: 1.2rem;
 }
-.sec-about,
-.sec-education,
-.sec-languages,
-.sec-skill,
-.sec-experience {
-  grid-column: 2;
-}
 .aboutme,
-.skill {
+.education,
+.skill,
+.experience {
   display: grid;
   grid-template-columns: 30% auto;
   border: 1px solid var(--acolor);
+  line-height: 2rem;
+  font-size: 0.9rem;
 }
-.education,
 .experience {
-  display: grid;
-  grid-template-columns: auto auto;
-  border: 1px solid var(--acolor);
+  padding: 0.5rem;
+  line-height: 1.2rem;
 }
 .languages {
   display: grid;
-  grid-template-columns: 30% 30% auto;
+  grid-template-columns: 30% 30% 30%;
   border: 1px solid var(--acolor);
-}
-.detail {
-  display: grid;
-  grid-template-columns: auto auto;
+  line-height: 2rem;
 }
 .col ul li {
   list-style: none;
@@ -69,4 +82,22 @@ a:hover {
   text-decoration: underline;
   cursor: pointer;
   color: var(--hovercolor);
+}
+p {
+  line-height: 0.2rem;
+}
+.upper {
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "home"
+      "about"
+      "education"
+      "languages"
+      "skill"
+      "experience";
+  }
 }
