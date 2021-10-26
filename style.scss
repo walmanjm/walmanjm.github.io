@@ -7,6 +7,7 @@
 }
 body {
     display: grid;
+    place-items: center;
     background-color: #dfe3ee;
     background-image: url(images/UC.svg);
     background-repeat: no-repeat;
@@ -46,4 +47,12 @@ footer {
     background-color: #3b5998;
     color: #dfe3ee;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(images/UCm.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
